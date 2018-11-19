@@ -16,11 +16,11 @@ class Artist
   
   def add_song_by_name(name)
     self.songs << Song.new(name)
-    add_song(@songs.last)
+    add_song(self.songs.last)
   end
   
   def self.song_count
-    @@all.reduce(0) { |count, artist| count + artist.songs.length }
+    self.all.reduce(0) { |count, artist| count + artist.songs.length }
   end
   
   def self.all
