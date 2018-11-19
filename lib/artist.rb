@@ -23,4 +23,8 @@ class Artist
     @@all.reduce(0) { |count, artist| count + artist.songs.length }
   end
   
+  def self.all
+    @@all
+  end
+  
 end
