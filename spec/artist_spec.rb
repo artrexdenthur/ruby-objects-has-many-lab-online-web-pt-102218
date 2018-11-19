@@ -42,7 +42,7 @@ describe "Artist" do
 
     describe ".song_count" do
       it "is a class method that returns the total number of songs associated to all existing artists" do
-        binding.pry
+        # binding.pry
         expect(Artist.song_count).to eq(2)
       end
     end
